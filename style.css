@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+}
+
+wavy {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
