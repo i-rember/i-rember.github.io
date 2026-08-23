@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Dynamic Text Testing</title>
+        <style>
+            dyna {
+                display: inline-block;
+            }
+
+            dyna > span {
+                white-space: pre-wrap;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Dynamic Text Testing</h1>
+        <dyna
+            data-oscx-phase="0"
+            data-oscx-amp="5"
+            data-oscx-freq="0.3"
+        >This text should oscillate left and right.</dyna>
+        <br>
+        <dyna
+            data-oscy-phase="0.2"
+            data-oscy-amp="5"
+            data-oscy-freq="0.3"
+        >This text should oscillate up and down.</dyna>
+        <br>
+        <dyna
+            data-oscr-phase="0.4"
+            data-oscr-amp="5"
+            data-oscr-freq="0.3"
+        >This text should rotate back and forth.</dyna>
+        <br><br>
+
+        <dyna
+            data-coscx-phase="0"
+            data-coscx-off="0.1"
+            data-coscx-amp="5"
+            data-coscx-freq="0.3"
+        >The letters of this text should oscillate left and right.</dyna>
+        <br>
+        <dyna
+            data-coscy-phase="0.2"
+            data-coscy-off="0.1"
+            data-coscy-amp="5"
+            data-coscy-freq="0.3"
+        >The letters of this text should oscillate up and down.</dyna>
+        <br>
+        <dyna
+            data-coscr-phase="0.4"
+            data-coscr-off="0.1"
+            data-coscr-amp="15"
+            data-coscr-freq="0.3"
+        >The letters of this text should rotate back and forth.</dyna>
+        <br>
+    </body>
+
+    <script src="dyna.js"></script>
+</html>
