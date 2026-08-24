@@ -1,8 +1,86 @@
 html, body {
+    --navbar-height: 30px;
     margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: var(--navbar-height);
 }
 
 .banner {
     display: block;
     width: 100%;
+}
+
+dyna {
+    display: inline-block;
+}
+
+dyna > span {
+    white-space: pre-wrap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    justify-self: center;
+    color:aqua;
+}
+
+h1 {
+    color: yellow;
+}
+
+p {
+    width: 60%;
+    margin-inline: auto;
+    text-align: left;
+}
+
+a {
+    color: aqua;
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus-visible {
+    color: yellow;
+}
+
+a:checked {
+    color: fuchsia;
+}
+
+ul, li {
+    width: 70%;
+    margin-inline: auto;
+    text-align: left;
+}
+
+navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    background-color: grey;
+    color: black;
+}
+
+body > * {
+    animation: fade-in-from-below 600ms ease-out both;
+}
+
+@keyframes fade-in-from-below {
+    from {
+        opacity: 0;
+        transform: translateY(1.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
