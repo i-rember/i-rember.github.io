@@ -9,6 +9,7 @@ class Navbar extends HTMLElement {
                     <a href="/tools/">tools</a> /
                     <a href="/toys/">toys</a> /
                     <a href="/experiments/">experiments</a> /
+                    <a href="/misc/">misc</a> /
                     <a href="https://github.com/i-rember/i-rember.github.io">github</a>
                 </x>
             </navbar>
