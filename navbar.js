@@ -3,12 +3,12 @@ class Navbar extends HTMLElement {
         this.innerHTML = `
             <navbar>
                 <x>
-                    <a>home</a> /
-                    <a>games</a> /
-                    <a>music</a> /
-                    <a>tools</a> /
-                    <a>toys</a> /
-                    <a>experiments</a> /
+                    <a href="/">home</a> /
+                    <a href="/games/">games</a> /
+                    <a href="/music/">music</a> /
+                    <a href="/tools/">tools</a> /
+                    <a href="/toys/">toys</a> /
+                    <a href="/experiments/">experiments</a> /
                     <a href="https://github.com/i-rember/i-rember.github.io">github</a>
                 </x>
             </navbar>
