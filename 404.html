@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>?????</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <navbar-ph></navbar-ph>
+
+        <h1><flicker>
+            page not found
+        </flicker></h1>
+        <p>
+            <flicker>the page you were looking for could not be found.</flicker>
+            <br>
+            <flicker>why on earth are you reading this</flicker> 404
+            <flicker>it's meant to be replaced lol</flicker>
+            <br>
+            <a href="/"><flicker>fgdsajkfghlk</flicker></a>
+        </p>
+    </body>
+
+    <script src="navbar.js"></script>
+    <script>
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            const tags = document.querySelectorAll("flicker");
+            async function update(t) {
+                for (const tag of tags) {
+                    var rep = "";
+                    for (let i = 0; i < tag.textContent.length; i++) {
+                        if (Math.random() < 0.02) rep += " ";
+                        else rep += "?";
+                    }
+                    tag.textContent = rep;
+                }
+                await sleep(100);
+                requestAnimationFrame(update);
+            }
+            requestAnimationFrame(update);
+        })
+    </script>
+</html>
