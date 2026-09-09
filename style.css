@@ -65,12 +65,12 @@ navbar {
     align-items: center;
     justify-content: center;
     text-align: center;
-    z-index: 99;
+    z-index: 2147483647;
     background-color: grey;
     color: black;
 }
 
-body > * {
+body > *:not(navbar) {
     animation: fade-in-from-below 600ms ease-out both;
 }
 
