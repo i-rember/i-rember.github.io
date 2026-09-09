@@ -65,7 +65,7 @@ navbar {
     align-items: center;
     justify-content: center;
     text-align: center;
-    z-index: 9999;
+    z-index: 99;
     background-color: grey;
     color: black;
 }
